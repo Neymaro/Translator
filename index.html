@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Translator App - Hamza Unsal</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--jQuery CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--Responsive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    @media screen and (max-width: 500px){
+        .main{flex-direction: column;};
+        .language{width: 37%;border:none;padding: 10px;margin: 10px 56px auto;position: initial;padding: 10px;};
+        .header{margin-top: 10px;};
+        .header textarea{width: 100%;};
+        .translatebtn{width: 100%;min-height: 60px;};
+
+    }
+</style>
+
+</head>
+<body>
+<section class="main">
+    <div class="header">
+    <img src="images/logo.png">
+    <h2>Version V0.1</h2>    
+    <div class="language">
+    <div class="languageto">
+    <select class="firstlanguages" name="languages" id="langs">
+    <option value="en">English</option>
+    <option value="tr">Turkish</option>
+    <option value="de">German</option>
+    <option value="es">Spanish</option>
+    </select>
+    </div>    
+    </div>
+    <form id="translate-form">
+    <textarea class="firstmsj" name="word" placeholder="Type Any Thing in Any Language" id="word" value="Nasılsın"></textarea>
+    <textarea class="secondmsj"  name="message" disabled placeholder="Your Translate"></textarea>
+    <input class="translatebtn" type="submit" value="Translate">
+        
+    </form>
+    </div>   
+</section>  
+<script src="js/translate.js"></script>
+<script src="js/app.js"></script>
+<script src="js/main.js"></script> 
+</body>
+</html>
